@@ -374,13 +374,14 @@ ul, ol {
 }
 
 /* ==========================================================================
-   HERO BANNER SLIDER (100vh Full Screen Laptop Cover)
+   HERO BANNER SLIDER (Desktop Cover: ~88vh Balanced Height)
    ========================================================================== */
 .hero-section {
   position: relative;
   width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
+  height: 88vh;
+  min-height: 560px;
+  max-height: 820px;
   background-color: #000000;
   overflow: hidden;
 }
@@ -418,8 +419,7 @@ ul, ol {
 .hero-slide-media {
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -2095,11 +2095,17 @@ ul, ol {
     display: none;
   }
 
-  /* Hero Banner on Mobile (100vh Full Screen Touch-Ready) */
+  /* Hero Banner on Mobile (Shorter in length, Tones Fashion peek style ~80% viewport height) */
+  .hero-section {
+    height: 80vh;
+    height: 80dvh;
+    min-height: 480px;
+    max-height: 700px;
+  }
+
   .hero-slide-media {
-    height: 100vh;
-    height: 100dvh;
-    min-height: 100dvh;
+    height: 100%;
+    min-height: unset;
   }
 
   .tones-shop-now-btn {
@@ -2109,7 +2115,11 @@ ul, ol {
   }
 
   .hero-tones-cta {
-    bottom: 36px;
+    bottom: 34px;
+  }
+
+  .hero-dots {
+    bottom: 12px;
   }
 
   .hero-nav-btn {
