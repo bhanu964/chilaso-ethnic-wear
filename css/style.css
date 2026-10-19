@@ -851,6 +851,11 @@ ul, ol {
   display: block;
 }
 
+.celebrate-banner-wrapper picture {
+  display: block;
+  width: 100%;
+}
+
 .celebrate-banner-img {
   width: 100%;
   height: auto;
